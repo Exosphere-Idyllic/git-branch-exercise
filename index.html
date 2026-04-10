@@ -163,6 +163,51 @@
                 opacity: 1;
             }
         }
+
+        /* Estilos del pie de página */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.8s ease-out;
+            z-index: 999;
+        }
+
+        footer p {
+            margin: 0;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+            color: #fff;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            padding-bottom: 65px;
+        }
     </style>
 </head>
 <body>
@@ -184,5 +229,8 @@
         <p>Te damos la más cordial bienvenida a nuestro sitio web. Estamos felices de tenerte aquí. Esta página ha sido creada con HTML moderno, 
             CSS avanzado y animaciones suaves para brindarte la mejor experiencia de usuario. ¡Que disfrutes navegando!</p>
     </div>
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
